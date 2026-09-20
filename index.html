@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Purvi ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=Parisienne&display=swap');
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:#08060b;color:#fff;font-family:Inter,sans-serif;
+  overflow-x:hidden;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:50;
+  background:radial-gradient(circle at 50% 20%,rgba(255,80,140,.12),transparent 35%);
+}
+#start{
+ position:fixed;inset:0;z-index:100;background:#08060b;display:grid;place-items:center;
+ transition:1s ease;
+}
+#start.hide{opacity:0;visibility:hidden;pointer-events:none}
+.startBox{text-align:center;width:min(90%,650px);padding:30px}
+.mini{font-size:10px;letter-spacing:.45em;text-transform:uppercase;color:#d7a9bb}
+.envelope{
+ width:130px;height:95px;margin:35px auto 25px;border:1px solid rgba(255,255,255,.2);
+ border-radius:12px;position:relative;background:linear-gradient(145deg,#24111c,#120b12);
+ box-shadow:0 25px 70px rgba(255,62,130,.2);animation:float 3s ease-in-out infinite;
+}
+.envelope:after{
+ content:"♥";position:absolute;inset:0;display:grid;place-items:center;
+ font-size:38px;color:#ff78a9;
+}
+.startBox h1{font-family:"DM Serif Display",serif;font-size:clamp(45px,10vw,85px);margin:0}
+.startBox p{color:#bdaeb6;line-height:1.8}
+.open{
+ margin-top:16px;padding:14px 28px;border:0;border-radius:999px;color:#fff;
+ background:linear-gradient(100deg,#ff4f8b,#b46cff);font-weight:700;cursor:pointer;
+ box-shadow:0 12px 40px rgba(255,79,139,.28)
+}
+@keyframes float{50%{transform:translateY(-10px)}}
+
+.page{max-width:1100px;margin:auto}
+section{min-height:100vh;padding:90px 22px;display:grid;place-items:center;position:relative}
+.hero{text-align:center}
+.kicker{font-size:11px;letter-spacing:.35em;text-transform:uppercase;color:#e2b3c5}
+.name{
+ font-family:Parisienne,cursive;font-size:clamp(85px,19vw,210px);font-weight:400;
+ line-height:.8;margin:25px 0 15px;
+ background:linear-gradient(100deg,#fff,#ff9fbe,#d19bff,#fff);
+ background-size:300% auto;-webkit-background-clip:text;background-clip:text;color:transparent;
+ animation:shine 5s linear infinite;
+}
+@keyframes shine{to{background-position:300% center}}
+.hero h2{font-family:"DM Serif Display";font-size:clamp(28px,5vw,50px);font-weight:400;margin:15px 0}
+.hero p{max-width:680px;margin:20px auto;color:#cbbec6;line-height:1.9}
+.arrow{margin-top:55px;opacity:.7;animation:bounce 1.8s infinite}
+@keyframes bounce{50%{transform:translateY(9px)}}
+
+.reveal{opacity:0;transform:translateY(45px) scale(.98);transition:1s ease}
+.reveal.show{opacity:1;transform:none}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center;width:100%}
+.photo{
+ border-radius:30px;overflow:hidden;border:1px solid rgba(255,255,255,.13);
+ box-shadow:0 30px 100px rgba(0,0,0,.5);position:relative;background:#151018;
+}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo.one{height:650px;transform:rotate(-2deg)}
+.photo.two{height:500px;transform:rotate(2deg)}
+.photo.three{height:650px;transform:rotate(1.5deg)}
+.photo:after{
+ content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(0,0,0,.35));
+ pointer-events:none;
+}
+.tag{color:#ff9cbb;font-size:11px;letter-spacing:.3em;text-transform:uppercase}
+h2.big{font-family:"DM Serif Display";font-size:clamp(48px,7vw,82px);line-height:.9;font-weight:400;margin:18px 0}
+.copy{color:#c8bac2;line-height:1.9;font-size:15px}
+.script{font-family:Parisienne,cursive;font-size:45px;color:#ff9fbd}
+
+.loveBox{
+ width:100%;padding:55px 30px;border-radius:35px;text-align:center;
+ background:linear-gradient(145deg,rgba(255,87,137,.09),rgba(164,100,255,.06));
+ border:1px solid rgba(255,255,255,.1);position:relative;overflow:hidden;
+}
+.loveBox:before,.loveBox:after{
+ content:"";position:absolute;border-radius:50%;filter:blur(40px);opacity:.3;
+ width:180px;height:180px;background:#ff4f8b;
+}
+.loveBox:before{left:-80px;top:-80px}.loveBox:after{right:-80px;bottom:-80px;background:#a36cff}
+.loveBox h2{font-family:"DM Serif Display";font-size:clamp(50px,8vw,95px);font-weight:400;margin:10px}
+.loveBox p{color:#d2c3cb;line-height:1.9;max-width:650px;margin:20px auto}
+
+.words{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:35px}
+.word{
+ padding:28px 18px;border:1px solid rgba(255,255,255,.1);border-radius:22px;
+ background:rgba(255,255,255,.035);transition:.35s
+}
+.word:hover{transform:translateY(-7px);background:rgba(255,255,255,.07)}
+.word b{font-family:"DM Serif Display";font-size:29px;color:#ffabc5;font-weight:400}
+.word span{display:block;color:#bfb1b9;font-size:13px;line-height:1.7;margin-top:10px}
+
+.counter{text-align:center}
+.counter .number{font-family:"DM Serif Display";font-size:clamp(70px,14vw,150px)}
+.counter p{color:#bcaeb7}
+.final{text-align:center}
+.final h2{font-family:"DM Serif Display";font-weight:400;font-size:clamp(45px,8vw,90px);line-height:.95}
+.final .letter{
+ max-width:700px;margin:25px auto;color:#d4c5cd;line-height:2;font-size:15px
+}
+.sig{font-family:Parisienne,cursive;color:#ff9fbc;font-size:44px;margin-top:30px}
+
+.heart{
+ position:fixed;bottom:-40px;z-index:60;pointer-events:none;color:#ff86ad;
+ animation:rise linear forwards;text-shadow:0 0 15px rgba(255,70,130,.5)
+}
+@keyframes rise{
+ 0%{transform:translateY(0) scale(.7) rotate(0);opacity:0}
+ 12%{opacity:.8}
+ 100%{transform:translateY(-115vh) scale(1.25) rotate(40deg);opacity:0}
+}
+.spark{
+ position:fixed;width:3px;height:3px;border-radius:50%;background:#fff;opacity:.4;
+ animation:twinkle 2s infinite alternate;pointer-events:none
+}
+@keyframes twinkle{to{opacity:1;transform:scale(2)}}
+
+@media(max-width:760px){
+ section{padding:75px 18px;min-height:auto}
+ .grid{grid-template-columns:1fr;gap:45px}
+ .photo.one,.photo.three{height:580px}.photo.two{height:440px}
+ .words{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div id="start">
+ <div class="startBox">
+  <div class="mini">a little something for</div>
+  <div class="envelope"></div>
+  <h1>Purvi</h1>
+  <p>There's a small surprise waiting behind this button.<br>Take your time. Don't just scroll. ✨</p>
+  <button class="open" onclick="openPage()">Open it ❤️</button>
+ </div>
+</div>
+
+<div class="page">
+
+<section class="hero">
+ <div class="reveal">
+  <div class="kicker">this page has one name written all over it</div>
+  <div class="name">Purvi</div>
+  <h2>Yes… this whole little world is for you.</h2>
+  <p>
+   I could have just sent a message. But sometimes a normal message feels
+   too small for what you actually want to say.
+  </p>
+  <div class="arrow">↓ &nbsp; keep going</div>
+ </div>
+</section>
+
+<section>
+ <div class="grid reveal">
+  <div class="photo one"><img src="assets/photo1.jpg" alt="Purvi"></div>
+  <div>
+   <div class="tag">01 / first frame</div>
+   <h2 class="big">A smile<br>worth saving.</h2>
+   <p class="copy">
+    Some pictures don't need a caption. They already carry the feeling.
+    This one deserved a whole section of its own.
+   </p>
+   <div class="script">you look lovely ✨</div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="loveBox reveal">
+   <div class="tag">02 / let me say it properly</div>
+   <h2>I LOVE YOU</h2>
+   <p>
+    Not as a giant dramatic sentence that disappears after you read it.
+    I mean it in all the small ways too — in the random conversations,
+    the silly moments, the memories, and the simple thought of you.
+   </p>
+   <div class="script">and I really, really do ❤️</div>
+ </div>
+</section>
+
+<section>
+ <div class="grid reveal">
+  <div>
+   <div class="tag">03 / another little memory</div>
+   <h2 class="big">Somehow,<br>you make moments special.</h2>
+   <p class="copy">
+    Maybe that's what I like most: it doesn't have to be some huge occasion.
+    A normal picture can become a favourite simply because it's yours.
+   </p>
+   <div class="words">
+    <div class="word"><b>Smile</b><span>because it changes the whole mood.</span></div>
+    <div class="word"><b>Memories</b><span>because they become stories later.</span></div>
+    <div class="word"><b>You</b><span>because there is only one you.</span></div>
+   </div>
+  </div>
+  <div class="photo two"><img src="assets/photo2.jpg" alt="Purvi"></div>
+ </div>
+</section>
+
+<section>
+ <div class="grid reveal">
+  <div class="photo three"><img src="assets/photo3.jpg" alt="Purvi"></div>
+  <div>
+   <div class="tag">04 / one last picture</div>
+   <h2 class="big">And then<br>there's this one…</h2>
+   <p class="copy">
+    If this little website made you smile even for a moment,
+    then it did exactly what I wanted it to do.
+   </p>
+   <div class="script">keep smiling, okay? 🌙</div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="counter reveal">
+  <div class="tag">05 / a tiny reminder</div>
+  <div class="number">∞</div>
+  <h2 class="big">Some feelings don't need a timer.</h2>
+  <p class="copy">No countdown. No expiry. Just a page made for one special person.</p>
+ </div>
+</section>
+
+<section class="final">
+ <div class="reveal">
+  <div class="tag">the last page</div>
+  <h2>Dear Purvi,<br>this one's yours.</h2>
+  <p class="letter">
+   I don't know if a webpage can really explain everything a person means,
+   but I wanted to try anyway. So here it is — a tiny corner of the internet
+   carrying a few photos, a few words, and one very simple message:
+   <br><br>
+   <strong style="color:#fff">I'm really glad you're a part of my life.</strong>
+  </p>
+  <div class="sig">Always yours to smile with ❤️</div>
+ </div>
+</section>
+
+</div>
+
+<script>
+function openPage(){
+ document.getElementById('start').classList.add('hide');
+ setTimeout(()=>document.querySelector('.hero .reveal').classList.add('show'),350);
+ for(let i=0;i<18;i++) setTimeout(makeHeart,i*70);
+}
+const observer=new IntersectionObserver(es=>{
+ es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})
+},{threshold:.16});
+document.querySelectorAll('.reveal').forEach(x=>observer.observe(x));
+
+function makeHeart(){
+ const h=document.createElement('div');h.className='heart';
+ h.textContent=['♥','♡','✦','❤'][Math.floor(Math.random()*4)];
+ h.style.left=Math.random()*100+'vw';
+ h.style.fontSize=(12+Math.random()*20)+'px';
+ h.style.animationDuration=(5+Math.random()*5)+'s';
+ document.body.appendChild(h);
+ setTimeout(()=>h.remove(),11000);
+}
+setInterval(makeHeart,700);
+
+for(let i=0;i<35;i++){
+ const s=document.createElement('div');s.className='spark';
+ s.style.left=Math.random()*100+'vw';s.style.top=Math.random()*100+'vh';
+ s.style.animationDelay=(Math.random()*2)+'s';
+ document.body.appendChild(s);
+}
+</script>
+</body>
+</html>
